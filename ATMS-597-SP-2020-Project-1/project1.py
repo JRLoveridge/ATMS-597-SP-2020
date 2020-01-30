@@ -39,8 +39,6 @@ class TemperatureConverter(object):
             temperature = float(temperature)
         self._input_type = type(temperature) #preserve old input type/dtype
 
-        print(self._input_type)
-
     def set_temperature(self, temperature, units='Kelvin'):
         """Overwrites the stored temperature and its type.
         
