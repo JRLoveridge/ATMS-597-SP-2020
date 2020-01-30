@@ -11,7 +11,7 @@ Original file is located at
 
 <h2>Part A: Convert temperatures interchangeably between degree Celsius, Farenheit and Kelvin </h2>
 <h3>Group H: Jesse Loveridge, Lina Rivelli-Zea, Xinchang Li</h3>
-
+"""
 import numpy as np
 
 class TemperatureConverter(object):
