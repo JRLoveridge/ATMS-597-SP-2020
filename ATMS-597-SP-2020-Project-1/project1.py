@@ -16,14 +16,12 @@ import numpy as np
 
 class TemperatureConverter(object):
     """
-
     Method to convert temperature interchangeably between 
     Farenheit, Celsius, and Kelvin. 
     Works with lists or numpy arrays as inputs, and returns 
     the same numerical type.
     J.Loveridge/L.RZ/X.Li 01.29.20
     """
-
     def __init__(self, temperature, units='Kelvin'):
         """Stores a temperature and its type.
       
@@ -47,7 +45,6 @@ class TemperatureConverter(object):
         units= in Farenheit, Celsius or Kelvin #type: str
 
         """
-        
         assert units in ['Fahrenheit', 'Celsius', 'Kelvin'], 'Units must be valid.'
         self._temperature = np.atleast_1d(temperature)
         self._units = units
@@ -98,7 +95,6 @@ class TemperatureConverter(object):
         else:
             returned_temperature = self._temperature
 
-
         return returned_temperature
   
     def to_celsius(self):
@@ -113,7 +109,6 @@ class TemperatureConverter(object):
             returned_temperature = (self._temperature - 32) * (5/9)
         elif self._units == 'Kelvin':
             returned_temperature = self._temperature - 273.15
-
         else:
             returned_temperature = self._temperature
 
